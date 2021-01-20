@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            margin-left: 20%;
+            flex-wrap: wrap;
+        }
+        .main-panel {
+            min-width: 40%;
+            text-align: center;
+            padding-top: 80px;
+        }
+        input {
+            margin-left: 0px;
+        }
+        button {
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="left-panel">
+            <p><h1>FlixMDB</h1></p>
+        </div>
+        <div class="main-panel">
+            <form action="/movies_list">
+                <label for="Movie">Enter a movie title!</label> <br>
+                <input type="search" name="user-input" id=""><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

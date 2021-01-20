@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <section class="left-panel">
+            <header><h1>FlixMDB</h1></header>
+            <form action="/movies_list">
+                <label for="Movie"><h2>Enter a movie title!</h2></label>
+                <input type="search" name="user-input" id=""><br/>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="main-panel">
+            <p>
+            <h2><%= movietitle %> </h2> <br/>
+
+            <img src="<%= poster %>" alt=""> <br/>
+
+            </p>
+        </section>
+        <section class="stats-panel">
+            <p class="details">
+               <u><strong>STARRING:</strong></u> <br/> <%= actors %><br/>
+               <u><strong>ABOUT:</strong></u> <br/> <%= plot %><br/>
+               <u><strong>LANGUAGES:</strong></u> <br/> <%= language %><br/>
+               <u><strong>AWARDS:</strong></u> <br/> <%= awards %><br/>
+            </p>
+        </section>
+    </section>
+</body>
+</html>
